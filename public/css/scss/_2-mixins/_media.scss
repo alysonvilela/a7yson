@@ -1,0 +1,21 @@
+// usage: 
+// @include media($breakpoint) { 
+//  .class {
+//      display: flex;
+//    }
+//  }
+
+@mixin media($media) {
+  $breakpoint: map-get($breakpoints, $media);
+
+  @if $breakpoint !=null {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @else {
+    @error 'Unfortunately, no value could be retrieved from `#{$media}`. '
+    +'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

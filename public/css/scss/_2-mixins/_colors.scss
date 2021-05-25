@@ -1,0 +1,12 @@
+// usage color($key)
+@function color($color-value) {
+  $color: map-get($colors, $color-value);
+
+  @if $color !=null {
+    @return $color;
+  }
+
+  @else {
+    @error 'Color `#{$color-value}` + is not in the `$colors` map.';
+  }
+}

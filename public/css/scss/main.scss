@@ -1,0 +1,23 @@
+// import variables and objects
+@import '_1-variables/colors';
+@import '_1-variables/fonts';
+@import '_1-variables/layout';
+
+// import mixins
+@import '_2-mixins/colors';
+@import '_2-mixins/media';
+@import '_2-mixins/to-rem';
+@import '_2-mixins/ellipsis';
+@import '_2-mixins/animations/fade';
+
+// first import normalize styles then our own
+@import '_3-base/normalize';
+@import '_3-base/base';
+
+// import component styles here
+// @import '_4-components/component-name';
+
+//import utilities
+@import '_5-utilities/flex';
+@import '_5-utilities/helpers';
+@import '_5-utilities/spacers';
