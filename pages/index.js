@@ -1,11 +1,9 @@
 function Home() {
     return (
-        
-{/* https://magic.reactjs.net/htmltojsx.htm */}
+        <div>Hello</div>
 
       );
 
 }
 
 export default Home
-
