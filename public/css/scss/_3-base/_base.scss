@@ -17,4 +17,56 @@ body {
   min-height: 100vh;
   width: 100vw;
   margin: 0;
+
+  h1 {
+    font-weight: $fw-ex-bold;
+    font-size: $fs-A;
+    color: $f-title;
+    text-transform: inherit;
+    letter-spacing: -0.07rem;
+    @media (max-width: 576px) {
+        font-size: $fs-B;
+    }
+    }
+
+h2 {
+    font-weight: $fw-bold;
+    font-size: $fs-B;
+    text-transform: uppercase;
+    color: $f-title;
+    letter-spacing: -0.14rem;
+    @media (max-width: 576px) {
+      font-size: $fs-C;
+  }
+}
+
+
+p {
+    font-weight: 400;
+    font-size: $fs-D;
+    color: color(f-text);
+    @media (max-width: 576px) {
+      font-size: $fs-F;
+}
+}
+
+.p-display {
+  font-size: $fs-CD;
+  @media (max-width: 576px) {
+    font-size: $fs-E;
+  }
+}
+
+.p-white{
+    color: color(f-title);
+}
+.p-red{
+    color: color(red);
+}
+.p-blue{
+    color: color(blue);
+}
+.p-green{
+    color: color(green);
+}
 }
