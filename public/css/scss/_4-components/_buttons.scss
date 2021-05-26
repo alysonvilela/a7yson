@@ -1,0 +1,63 @@
+.btn-green {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: black;
+    background-color: $green;
+    border-radius:0.5rem;
+}
+
+.btn-red {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: white;
+    background-color: $red;
+    border-radius:0.5rem;
+}
+
+.btn-blue {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    color: white;
+    background-color: $blue;
+    border-radius:0.5rem;
+}
+
+  
+
+.active {
+    color: $blue;
+  }
+
+  .link-hold {
+    color: white;
+    transition:all 0.3s ease;
+   &:hover{
+     color: $red;
+  }
+  }
+ 
+

@@ -36,34 +36,3 @@
 .u-flex--space-around {
   justify-content: space-around !important;
 }
-
-h1 {
-  font-weight: $fw-ex-bold;
-  font-size: 5rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-weight: $fw-bold;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-p {
-  font-weight: $fw-light;
-  font-size: 1.5rem;
-  color: color(f-text);
-}
-
-.p-white{
-  color: color(f-title);
-}
-.p-red{
-  color: color(red);
-}
-.p-blue{
-  color: color(blue);
-}
-.p-green{
-  color: color(green);
-}
