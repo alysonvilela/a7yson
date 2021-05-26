@@ -6,3 +6,20 @@ $breakpoints: (480: 480px,
   768: 768px,
   1024: 1024px,
   1200: 1200px) !default;
+
+  .background-gr-lighter {
+    background-image: linear-gradient(180deg, $primary, $primary-light);
+  }
+
+  .background-gr-lighter-inv {
+    background-image: linear-gradient(180deg, $primary-light, $primary);
+  }
+
+  .background-lighter {
+    background-color: $primary-light;
+  }
+
+  .background-red {
+    background-color: $red;
+  }
+
