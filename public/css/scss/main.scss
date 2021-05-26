@@ -9,6 +9,7 @@
 @import '_2-mixins/to-rem';
 @import '_2-mixins/ellipsis';
 @import '_2-mixins/animations/fade';
+@import '_2-mixins/animations/scrolldown';
 
 // first import normalize styles then our own
 @import '_3-base/normalize';
@@ -16,6 +17,7 @@
 
 // import component styles here
 @import '_4-components/buttons';
+@import '_4-components/scrolldown';
 
 //import utilities
 @import '_5-utilities/flex';

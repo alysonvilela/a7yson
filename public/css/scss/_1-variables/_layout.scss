@@ -56,6 +56,13 @@ $breakpoints: (480: 480px,
   to   { transform: translate(0, -0px); }    
 }
 
+@keyframes floating-4 {
+  from { transform: translate(0, -0px); }
+  20%  { transform: translate(0, 50px);opacity: 0%;}
+  80%  { transform: translate(0, 50px);opacity: 0%;}
+  to   { transform: translate(0, -0px);opacity: 100%;}    
+}
+
 .floating {  
   animation-name: floating;
   animation-duration: 3s;
@@ -77,6 +84,15 @@ $breakpoints: (480: 480px,
 .floating-3 {  
   animation-name: floating-3;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.floating-4 {  
+  animation-name: floating-4;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 30px;
