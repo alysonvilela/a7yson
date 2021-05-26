@@ -12,6 +12,11 @@
     color: black;
     background-color: $green;
     border-radius:0.5rem;
+    &:hover{
+        transition: 2s eas-in-out 3s;
+        color: $f-title;
+        background-color: $red-light;
+    }
 }
 
 .btn-red {
@@ -28,7 +33,13 @@
     color: white;
     background-color: $red;
     border-radius:0.5rem;
+    &:hover{
+        transition: 2s eas-in-out 3s;
+        color: $f-title;
+        background-color: $red-light;
+    }
 }
+
 
 .btn-blue {
     display: inline-block;
@@ -44,7 +55,38 @@
     color: white;
     background-color: $blue;
     border-radius:0.5rem;
+    &:hover{
+        transition: 2s ease-in-out 3s;
+        color: $f-title;
+        background-color: $red-light;
+    }
 }
+
+.btn-red-transparent {
+    background: transparent;
+    border: 1px solid $red;
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.btn-green-transparent {
+    background: transparent;
+    border: 1px solid $green;
+    &:hover {
+        color: $primary;
+        background-color: $green;
+    }
+}
+
+.btn-blue-transparent {
+    background: transparent;
+    border: 1px solid $blue;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
 
   
 

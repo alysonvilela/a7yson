@@ -81,6 +81,15 @@ p {
 }
 }
 
+.p {
+  font-weight: 400;
+  font-size: $fs-D;
+  color: color(f-text);
+  @media (max-width: 576px) {
+    font-size: $fs-F;
+}
+}
+
 .p-display {
   font-size: $fs-CD;
   @media (max-width: 576px) {
@@ -99,10 +108,17 @@ p {
 .p-red{
     color: color(red);
 }
+
 .p-blue{
     color: color(blue);
 }
 .p-green{
     color: color(green);
+}
+.p-purple{
+  color: $purple;
+  &:hover {
+    color: $purple-light;
+  }
 }
 }
