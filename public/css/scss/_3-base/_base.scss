@@ -15,29 +15,29 @@ body {
   font-size: 1rem;
   font-family: $primary-font;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 
   ul {
     list-style-type: none;
   }
 
-     ul a{
-      padding-left: 1.5rem;
-    }
+  ul a {
+    padding-left: 1.5rem;
+  }
 
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      color: $f-text;
-      font-size: 1.125rem;
-      &:hover{
-        color: $red;
-      }
-      @media (max-width: 576px) {
-        font-size: 1rem;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $f-text;
+    font-size: 1.125rem;
+    &:hover {
+      color: $red;
     }
+    @media (max-width: 576px) {
+      font-size: 1rem;
     }
+  }
 
   h1 {
     margin: $fs-F 0;
@@ -47,11 +47,11 @@ body {
     text-transform: inherit;
     letter-spacing: -0.07rem;
     @media (max-width: 576px) {
-        font-size: $fs-B;
+      font-size: $fs-B;
     }
-    }
+  }
 
-h2 {
+  h2 {
     font-weight: $fw-ex-bold;
     font-size: $fs-B;
     text-transform: uppercase;
@@ -60,65 +60,64 @@ h2 {
     @media (max-width: 576px) {
       letter-spacing: -0.07rem;
       font-size: $fs-E;
+    }
   }
-}
 
-h3 {
-  font-weight: $fw-ex-bold;
-  font-size: $fs-E;
-  text-transform: inherit;
-  color: $f-title;
-  letter-spacing: -0.07rem;
-}
+  h3 {
+    font-weight: $fw-ex-bold;
+    font-size: $fs-E;
+    text-transform: inherit;
+    color: $f-title;
+    letter-spacing: -0.07rem;
+  }
 
-
-p {
+  p {
     font-weight: 400;
     font-size: $fs-D;
     color: color(f-text);
     @media (max-width: 576px) {
       font-size: $fs-F;
-}
-}
-
-.p {
-  font-weight: 400;
-  font-size: $fs-D;
-  color: color(f-text);
-  @media (max-width: 576px) {
-    font-size: $fs-F;
-}
-}
-
-.p-display {
-  font-size: $fs-CD;
-  @media (max-width: 576px) {
-    font-size: $fs-E;
+    }
   }
-}
 
-.p-display-low {
-  font-size: 1.25rem;
-  line-height: 1.7rem;
-}
+  .p {
+    font-weight: 400;
+    font-size: $fs-D;
+    color: color(f-text);
+    @media (max-width: 576px) {
+      font-size: $fs-F;
+    }
+  }
 
-.p-white{
+  .p-display {
+    font-size: $fs-CD;
+    @media (max-width: 576px) {
+      font-size: $fs-E;
+    }
+  }
+
+  .p-display-low {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+  }
+
+  .p-white {
     color: color(f-title);
-}
-.p-red{
-    color: color(red);
-}
-
-.p-blue{
-    color: color(blue);
-}
-.p-green{
-    color: color(green);
-}
-.p-purple{
-  color: $purple;
-  &:hover {
-    color: $purple-light;
   }
-}
+  .p-red {
+    color: color(red);
+  }
+
+  .p-blue {
+    color: color(blue);
+  }
+  .p-green {
+    color: color(green);
+  }
+  .p-purple {
+    color: $purple;
+    &:hover {
+      color: $purple-light;
+    }
+  }
 }
