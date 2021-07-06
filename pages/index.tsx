@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import headerPic from '../public/assets/header.png'
+import { Ro } from 'next'
 
 export default function Home() {
   return (
