@@ -84,7 +84,7 @@ export function Footer() {
                     <h3 className="pb-1 active">WORK</h3>
                   </a>
                   <a href="#">
-                    <h3 className="pb-1 link-hold">portfolio</h3>
+                    <h3 className="pb-1 link-hold">PORTFOLIO</h3>
                   </a>
                   <a href="#">
                     <h3 className="pb-1 link-hold">ABOUT</h3>
