@@ -1,5 +1,3 @@
-import { DocumentContext } from "next/dist/next-server/lib/document-context"
-import { useEffect, useState } from "react"
 
 
 export function SeoHeader() {
@@ -29,5 +27,3 @@ export function SeoHeader() {
         </>
     )
 }
-
-document.title = seoTitle;
