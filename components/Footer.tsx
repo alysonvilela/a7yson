@@ -62,7 +62,7 @@ export function Footer() {
                 <div className="text-and-image row">
                   <p className="p-display-low p-white col-7">
                     If you want to work together on a project or just have a
-                    chat, please don't hesitate to contact me via email below.
+                    chat, please don&apos;t hesitate to contact me via email below.
                   </p>
                   <div className="img-fluid col-5">
                     <Image
