@@ -1,18 +1,22 @@
-import '../public/css/main.css'
-import { AppProps } from 'next/app'
-import Head from 'next/head'
-import { SeoHeader } from '../components/SeoTags'
-import { ExtScripts } from '../components/ExternalScripts'
-
+import 'bootstrap/dist/css/bootstrap.css';
+import '../public/css/main.css';
+import Head from 'next/head';
+import { AppProps } from 'next/app';
+import { SeoHeader } from '../components/SeoTags';
+import { ExtScripts } from '../components/ExternalScripts';
+import { NavBar } from '../components/Nav';
+import { Footer } from '../components/Footer';
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
       <SeoHeader />
-    </Head>    
+    </Head>
+    <NavBar />
     <Component {...pageProps} />
-      <ExtScripts/>
+    <Footer />
+    <ExtScripts />
   </>
-)
+);
 
-export default App
+export default App;

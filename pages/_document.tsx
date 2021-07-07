@@ -1,11 +1,18 @@
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
-import React from 'react'
+import Document, {
+  DocumentContext,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from 'next/document';
+import React from 'react';
+import { Footer } from '../components/Footer';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
+    const initialProps = await Document.getInitialProps(ctx);
 
-    return initialProps
+    return initialProps;
   }
   renderPage() {
     return (
@@ -13,12 +20,11 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <NextScript>
-          </NextScript>
+          <NextScript></NextScript>
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
