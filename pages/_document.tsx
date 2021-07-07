@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document';
 import React from 'react';
 import { Footer } from '../components/Footer';
+import { SeoTags } from '../components/SeoTags';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -17,7 +18,9 @@ class MyDocument extends Document {
   renderPage() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <SeoTags />
+        </Head>
         <body>
           <Main />
           <NextScript></NextScript>
