@@ -10,7 +10,6 @@ import { Footer } from '../components/Footer';
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <SeoHeader />
     </Head>
     <NavBar />
     <Component {...pageProps} />

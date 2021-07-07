@@ -12,10 +12,11 @@ import { SeoHeader } from '../components/SeoTags';
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-
     return initialProps;
   }
+  
   renderPage() {
+    document.title = 'My new title here';
     return (
       <Html>
         <Head>

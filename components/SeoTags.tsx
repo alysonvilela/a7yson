@@ -1,3 +1,7 @@
+import { DocumentContext } from "next/dist/next-server/lib/document-context"
+import { useEffect, useState } from "react"
+
+
 export function SeoHeader() {
     const seoWebsite = "https://a7yson.dev/"
     const seoImg = "https://a7yson.dev/img/socialgraph.png"
@@ -25,3 +29,5 @@ export function SeoHeader() {
         </>
     )
 }
+
+document.title = seoTitle;
