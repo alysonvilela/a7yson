@@ -75,7 +75,7 @@ export function NavBar() {
             </li>
             <li className="nav-item">
               <a className="pe-0 nav-link" href="portfolio.html">
-                Portifolio
+                Portfolio
               </a>
             </li>
             <li className="nav-item">
