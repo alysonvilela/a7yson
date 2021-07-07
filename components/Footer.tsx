@@ -28,8 +28,8 @@ export function Footer() {
                         y2="3.448"
                         gradientUnits="objectBoundingBox"
                       >
-                        <stop offset="0" stop-color="#c51f4a" />
-                        <stop offset="1" stop-color="#f15b27" />
+                        <stop offset="0" stopColor="#c51f4a" />
+                        <stop offset="1" stopColor="#f15b27" />
                       </linearGradient>
                       <linearGradient
                         id="linear-gradient-2"
