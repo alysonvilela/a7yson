@@ -33,7 +33,7 @@ export default function Home() {
                     <h2>Who I am</h2>
                     <p>I&apos;ve been a UX and UI designer for over 5 years, a web development enthusiast and passionate about problem solving (physics or not).</p>
                     <p>I&apos;m also learning and sharing educational subjects on my <a className="p p-purple href" href="https://twitch.tv/a7yson">Twitch</a> channel.</p>
-                    <a href="about.html" className="btn-red btn-blue-transparent w-100 my-3">More about me</a>
+                    <Link href="/about"><a className="btn-red btn-blue-transparent w-100 my-3">More about me</a></Link>
                 </div>
                 <div className="pics d-flex justify-content-center align-center col-12 col-lg-8">
                     <div className="text-part col">

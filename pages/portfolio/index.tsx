@@ -42,7 +42,7 @@ const Portfolio = () => {
             <h3>🔨 Develop</h3>
             <p>The last one is just <span className="p-green">do the thing</span>, look all the design concepts, list which technologies will be used, and <span className="p-green">start coding</span>.</p>
           </div>
-        </div>
+        </div> 
       </div>
       <div className="col-md-6 d-none d-md-flex justify-content-end align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="293.773" height="493.75" viewBox="0 0 293.773 493.75">
