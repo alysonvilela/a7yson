@@ -8,7 +8,7 @@ const About = () => {
     <div className="container error-page text-center">
       <h1>👷‍♀️👷‍♂️</h1>
       <h2>Page in Construction</h2>
-      <p>Meet me at <a href="https://twitch.tv/a7yson"><span className="p-purple">Twitch</span></a></p>
+      <p>Meet me at <a href="https://twitch.tv/a7yson"><span className="p p-purple">Twitch</span></a></p>
     </div>
   )
 }
