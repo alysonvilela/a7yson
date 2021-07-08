@@ -16,7 +16,7 @@ export default function Custom404() {
   }, [counter, router]);
 
   return (
-    <div className="container error-page">
+    <div className="container error-page text-center">
       <h1>Oops 😥</h1>
       <h2>Page Not Found</h2>
       <p>
