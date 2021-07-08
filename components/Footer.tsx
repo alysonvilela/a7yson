@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import headerPic from '../public/assets/header.png';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export function Footer() {
+  const router = useRouter();
+  const Home = router.pathname == "/" ? "active" : ""
+  const Portfolio = router.pathname == "/portfolio" ? "active" : "";
+  const About = router.pathname == "/about" ? "active" : "";
+
   return (
     <>
       <footer className="container">
@@ -80,15 +87,13 @@ export function Footer() {
             <div className="box-right col-lg-7">
               <div className="box text-center text-lg-end my-5 my-lg-0">
                 <div className="links">
-                  <a href="#" aria-Current="work">
-                    <h3 className="pb-1 active">WORK</h3>
-                  </a>
-                  <a href="#">
-                    <h3 className="pb-1 link-hold">PORTFOLIO</h3>
-                  </a>
-                  <a href="#">
-                    <h3 className="pb-1 link-hold">ABOUT</h3>
-                  </a>
+
+                  <ul>
+                    <div className={Home}><Link href='/'><a><h3 className="pb-1 link-hold">WORK</h3></a></Link></div>
+                    <div className={Portfolio}><Link href='/portfolio'><a><h3 className="pb-1 link-hold">PORTFOLIO</h3></a></Link></div>
+                    <div className={About}><Link href='/about'><a><h3 className="pb-1 link-hold">ABOUT</h3></a></Link></div>
+                  </ul>
+
                 </div>
               </div>
               <div className="box">

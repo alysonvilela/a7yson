@@ -6,8 +6,7 @@ import Document, {
   NextScript,
 } from 'next/document';
 import React from 'react';
-import { Footer } from '../components/Footer';
-import { SeoHeader } from '../components/SeoTags';
+
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -16,11 +15,9 @@ class MyDocument extends Document {
   }
   
   renderPage() {
-    document.title = 'My new title here';
     return (
       <Html>
         <Head>
-          <SeoHeader />
         </Head>
         <body>
           <Main />
