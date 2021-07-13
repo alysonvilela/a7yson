@@ -1,6 +1,12 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 export function NavBar() {
+  const router = useRouter();
+  const Home = router.pathname == "/" ? "active" : ""
+  const Portfolio = router.pathname == "/portfolio" ? "active" : "";
+  const About = router.pathname == "/about" ? "active" : "";
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
@@ -68,20 +74,26 @@ export function NavBar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="pe-0 nav-link active" aria-Current="work" href="#">
+            <li className={ `nav-link ${Home}` }>
+              <Link href="/"><a className="pe-0 nav-link" aria-Current="work">
                 Work
-              </a>
+              </a></Link>
             </li>
-            <li className="nav-item">
-              <a className="pe-0 nav-link" href="portfolio.html">
+
+            <li className={ `nav-link ${Portfolio}` }>
+            <Link href="/portfolio">
+              <a className="pe-0 nav-link">
                 Portfolio
               </a>
+              </Link>
             </li>
-            <li className="nav-item">
+
+            <li className={ `nav-link ${About}` }>
+              <Link href="/about">
               <a className="pe-0 nav-link" href="about.html">
                 About
               </a>
+              </Link>
             </li>
           </ul>
         </div>
