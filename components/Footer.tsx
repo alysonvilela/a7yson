@@ -87,8 +87,7 @@ export function Footer() {
             <div className="box-right col-lg-7">
               <div className="box text-center text-lg-end my-5 my-lg-0">
                 <div className="links">
-
-                  <ul>
+                  <ul className="d-flex flex-column justify-content-center justify-content-lg-end px-0">
                     <div className={Home}><Link href='/'><a><h3 className="pb-1 link-hold">WORK</h3></a></Link></div>
                     <div className={Portfolio}><Link href='/portfolio'><a><h3 className="pb-1 link-hold">PORTFOLIO</h3></a></Link></div>
                     <div className={About}><Link href='/about'><a><h3 className="pb-1 link-hold">ABOUT</h3></a></Link></div>

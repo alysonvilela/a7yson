@@ -1,6 +1,11 @@
+import Image from 'next/image';
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import large from '../../public/assets/esm/large-esm.jpg'
+import medium1 from '../../public/assets/esm/medium2-esm.jpg'
+import medium2 from '../../public/assets/esm/medium-esm.jpg'
+
 
 const Portfolio = () => {
   return (
@@ -58,32 +63,29 @@ const Portfolio = () => {
   </div>
 </section>
 
-{/* <section id="portfolio">
-  <div className="business-1">
-    <div className="container py-3 py-md-5">
-      <div className="row">
-        <div className="business-1 pb-3 pb-md-5">
-          <div className="text-part text-center w-75 mx-auto">
-            <h2>ESM Revestimentos</h2>
-            <p>UX, UI, Brand guidelines, Website development.</p>
-          </div>
-          <div className="pics">
-            <div className="large-pic"><img src="assets/esm/large-esm.jpg" className="img-fluid col-12" alt="ESM Principal Project">
-              
-            </div>
-            <div className="medium-pic d-flex py-3">
-              <div className="medium-pic col pe-3">
-                <img src="assets/esm/medium2-esm.jpg" className="img-fluid" style="width: 100%;" alt="ESM Guideline Cover">
+<section id="portfolio">
+    <div className="business-1">
+      <div className="container py-3 py-md-5">
+        <div className="row">
 
-                </div>
-              <div className="medium-pic col"><img src="assets/esm/medium-esm.jpg" className="img-fluid" style="width: 100%;" alt="Work documents"></div>
+          <div className="business-1 pb-3 pb-md-5">
+            <div className="text-part text-center w-75 mx-auto">
+              <h2>ESM Revestimentos</h2>
+              <p>UX, UI, Brand guidelines, Website development.</p>
+            </div>
+            <div className="pics">
+              <div className="large-pic"><Image src={large} layout="intrinsic" alt="ESM Principal Project"/></div>
+              <div className="medium-pic d-flex py-3">
+                <div className="medium-pic col pe-3"><Image src={medium1} layout="intrinsic" alt="ESM Guideline Cover"/></div>
+                <div className="medium-pic col"><Image src={medium2} layout="intrinsic" alt="Work documents"/></div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section> */}
+  </section>
     </>
   );
 }

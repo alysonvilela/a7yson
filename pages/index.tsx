@@ -32,20 +32,20 @@ export default function Home() {
                 <div className="text-part text-center text-md-start col-12 col-lg-4">
                     <h2>Who I am</h2>
                     <p>I&apos;ve been a UX and UI designer for over 5 years, a web development enthusiast and passionate about problem solving (physics or not).</p>
-                    <p>I&apos;m also learning and sharing educational subjects on my <a className="p p-purple href" href="https://twitch.tv/a7yson">Twitch</a> channel.</p>
+                    <p>I&apos;m also learning and sharing educational subjects on my <a className="p p-purple" href="https://twitch.tv/a7yson">Twitch</a> channel.</p>
                     <Link href="/about"><a className="btn-red btn-blue-transparent w-100 my-3">More about me</a></Link>
                 </div>
                 <div className="pics d-flex justify-content-center align-center col-12 col-lg-8">
                     <div className="text-part col">
-                        <div className="a7-dev d-flex justify-content-center py-3">
-                            <h4 className="p p-white align-self-center pe-1">A7</h4>
+                        <div className="a7title">
+                            <h4>A7</h4>
                             <h3 className="p-red">DEV</h3>
                         </div>
                         <div className="pb-3 "><Image className="img-fluid mx-auto pe-1 p-md-2 floating-2" src={aDev} alt="Development icon"/></div>
                     </div>
                     <div className="text-part col">
-                        <div className="a7-dev d-flex justify-content-center py-3">
-                            <h4 className="p p-white align-self-center pe-1">A7</h4>
+                        <div className="a7title">
+                            <h4>A7</h4>
                             <h3 className="p-blue">EDU</h3>
                         </div>
                         <div className="pb-3"><Image className="img-fluid mx-auto ps-1 p-md-2 floating-3" src={aEdu} alt="Education icon"/></div>
@@ -54,7 +54,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
     </>
   );
 }
