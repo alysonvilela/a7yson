@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import headerPic from '../public/assets/header.png';
 import { useRouter } from 'next/router';
+import { SeoTags } from '../components/SeoTags';
 import Head from 'next/head';
 import Link  from 'next/link';
 import headIllu from '../public/assets/icons/head-illustration.svg'
@@ -11,14 +12,23 @@ import aEdu from '../public/assets/icons/a7-edu.svg'
 
 
 export default function Home() {
+    const patternName = " - Alyson Vilela | Front-end Developer | UX/UI"
+    const title = "Hi, I'm Alyson Vilela"
+    const description = "I develop civil engeneering projects and interfaces for apps and websites."
+  
+
 
   return (
     <>
+    <Head>
+    <title>{title} {patternName}</title>
+    <SeoTags title={title} desc={description} img="imagem"/>
+    </Head>
       <section id="home">
         <div className="container py-3 py-md-5">
             <div className="text-par col-12 text-center w-75 w-lg-50 mx-auto py-4">
-                <h1>Hi, I&apos;m Alyson Vilela</h1>
-                <p className="p-display">I develop civil engeneering projects and interfaces for apps and websites.</p>
+                <h1>{title}</h1>
+                <p className="p-display">{description}</p>
             </div>
             <div className="pics col-8 col-md-4 mx-auto">
                 <div><Image className="floating" src={headIllu} alt="Alyson's Illustration" width="432px" height="492.83" /></div>

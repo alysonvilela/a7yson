@@ -5,19 +5,29 @@ import { useRouter } from 'next/router'
 import large from '../../public/assets/esm/large-esm.jpg'
 import medium1 from '../../public/assets/esm/medium2-esm.jpg'
 import medium2 from '../../public/assets/esm/medium-esm.jpg'
+import Head from 'next/head';
+import { SeoTags } from '../../components/SeoTags';
 
 
 const Portfolio = () => {
+  const patternName = " - Alyson Vilela | Front-end Developer | UX/UI"
+  const title = "Portfolio"
+  const description = "Meet how I usually start my projects and my processes."
+
   return (
-   <>     
+   <>
+    <Head>
+    <title>{title} {patternName}</title>
+    <SeoTags title={title} desc={description} img="imagem"/>
+    </Head>
   <section id="portfolioIntro" className="w-100">
   <div className="container py-3 py-md-5 vheight-75 justify-content-center">
     <div className="row text-center justify-content-center">
       <svg className="floating mb-4 me-0 ms-0" aria-Hidden="true" data-icon="briefcase" data-prefix="fas" focusable="false" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z" fill="currentColor" />
       </svg>
-      <h1>Portfolio</h1>
-      <p>Meet how I usually start my projects and my processes.</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
   </div>
 </section>
