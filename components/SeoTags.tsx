@@ -8,9 +8,9 @@ type SeoSettings= {
 
 
   export const SeoTags = (props: SeoSettings) => {
-      const patternTitle = " - Alyson Vilela | Front-end Developer | UX/UI"
-      const title = `${props.title} ${patternTitle}`
-      const desc = `${props.desc} ${patternTitle}`
+      const patternName = " - Alyson Vilela | Front-end Developer | UX/UI"
+      const title = `${props.title} ${patternName}`
+      const desc = `${props.desc} ${patternName}`
       
       return (
           <>
