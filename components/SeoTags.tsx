@@ -27,7 +27,7 @@ type SeoSettings= {
           <meta property="twitter:url" content="https://a7yson.dev/" />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:image" content={props.img} />
-          </Head>
+          </>
       )
   }
     
