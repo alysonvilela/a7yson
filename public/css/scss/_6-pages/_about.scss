@@ -9,10 +9,12 @@
       text-align: center;
     }
     @media (max-width: 768px) { 
+      position: unset;
       width: 15rem;
       margin-bottom: -224px;
     }
     @media (max-width: 1200px) { 
+      position: unset;
       width: 80%;
       margin-bottom: -223px;
     }
@@ -26,7 +28,6 @@
     max-height: 398px ;
     padding: $fs-D;
 
-  
     a {
       background-color: #4d0f1a75;
       &:hover {
@@ -34,9 +35,14 @@
         background-color: rgba(0, 0, 0, 0.6);
       }
     }
-
   }
+
 }
+
+.intro-text {
+  text-align: center;
+}
+
 
 .cont-min {
   img {
