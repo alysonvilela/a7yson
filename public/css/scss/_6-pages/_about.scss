@@ -1,0 +1,120 @@
+.cont-large {
+  img {
+    position: relative;
+    margin-bottom: -223px;
+    @media (max-width: 576px) {
+      position: unset;
+      margin-bottom: -305px;
+      width: 10rem;
+      text-align: center;
+    }
+    @media (max-width: 768px) { 
+      position: unset;
+      width: 15rem;
+      margin-bottom: -224px;
+    }
+    @media (max-width: 1200px) { 
+      position: unset;
+      width: 80%;
+      margin-bottom: -223px;
+    }
+  }
+  
+  .miniContainer {
+    background-color: $purple;
+    border-radius: 24px;
+    text-align: end;
+    width: 100%;
+    max-height: 398px ;
+    padding: $fs-D;
+
+    a {
+      background-color: #4d0f1a75;
+      &:hover {
+        transition: 2s eas-in-out 3s;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+}
+
+.intro-text {
+  text-align: center;
+}
+
+
+.cont-min {
+  img {
+    position: relative;
+    margin-bottom: -223px;
+    @media (max-width: 576px) {
+      position: unset;
+      margin-bottom: -305px;
+      width: 10rem;
+      text-align: center;
+    }
+    @media (max-width: 768px) { 
+      width: 15rem;
+      margin-bottom: -224px;
+    }
+    @media (max-width: 1200px) { 
+      width: 80%;
+      margin-bottom: -223px;
+    }
+  }
+  
+  .miniContainer {
+    background-color: $purple;
+    border-radius: 24px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+
+.textArea {
+  p {
+    color: white;
+
+  }
+
+  .quote {
+    font-style: italic;
+    margin: $fs-A 0 $fs-A 0;
+    text-align: center;
+  }
+
+  .redpart > h2:last-child {
+    margin-top: $fs-A;
+  }
+}
+
+
+.greenpart, .bluepart, .redpart {
+  display: flex;
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.blockOne {
+  width: 400px;
+  height: 260px;
+  background-color: $green !important;
+}
+
+.blockTwo {
+  width: 260px;
+  height: 260px;
+  background-color: $blue !important;
+}
+
+.blockThree {
+  width: 343px;
+  height: 260px;
+  background-color: $red !important;
+}
