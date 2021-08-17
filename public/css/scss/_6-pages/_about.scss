@@ -1,7 +1,7 @@
 .cont-large {
   img {
     position: relative;
-    margin-bottom: -223px;
+    margin-bottom: -222.02px;
     @media (max-width: 576px) {
       position: unset;
       margin-bottom: -305px;
@@ -9,16 +9,16 @@
       text-align: center;
     }
     @media (max-width: 768px) { 
-      position: unset;
       width: 15rem;
       margin-bottom: -224px;
     }
     @media (max-width: 1200px) { 
-      position: unset;
       width: 80%;
       margin-bottom: -223px;
     }
   }
+}
+
   
   .miniContainer {
     background-color: $purple;
@@ -37,7 +37,6 @@
     }
   }
 
-}
 
 .intro-text {
   text-align: center;
@@ -93,7 +92,7 @@
 .greenpart, .bluepart, .redpart {
   display: flex;
 
-  .img {
+  .memojis{
     display: flex;
     justify-content: center;
     align-items: center;
