@@ -166,7 +166,7 @@ const About = () => {
                     developed my first product within the company.
                   </p>
                   <p>
-                    TEvery part of the design, quotation and feasibility was
+                    Every part of the design, quotation and feasibility was
                     done, but unfortunately the project didn't go forward,
                     however I discovered my passion -{' '}
                     <span className="p-red">CREATE AND DELIVER</span>.

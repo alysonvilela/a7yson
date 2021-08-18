@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import headerPic from '../public/assets/header.png';
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export function Footer() {
   const router = useRouter();
-  const Home = router.pathname == "/" ? "active" : ""
-  const Portfolio = router.pathname == "/portfolio" ? "active" : "";
-  const About = router.pathname == "/about" ? "active" : "";
+  const Home = router.pathname == '/' ? 'active' : '';
+  const Portfolio = router.pathname == '/portfolio' ? 'active' : '';
+  const About = router.pathname == '/about' ? 'active' : '';
 
   return (
     <>
@@ -68,8 +68,9 @@ export function Footer() {
                 </div>
                 <div className="text-and-image row">
                   <p className="p-display-low p-white col-7">
-                    If you want to work together on a project or just have a
-                    chat, please don&apos;t hesitate to contact me via email below.
+                    If you want to have a chat or even bring results to your
+                    project, don't hesitate to contact me via email below, thank
+                    you for the visit ✨.
                   </p>
                   <div className="img-fluid col-5">
                     <Image
@@ -79,20 +80,39 @@ export function Footer() {
                     />
                   </div>
                 </div>
-                <button className="btn-red w-100 my-3" type="button">
-                  Send me an email
-                </button>
+                <Link href="mailto:hello@a7yson.dev">
+                  <button className="btn-red w-100 my-3" type="button">
+                    Send me an email
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="box-right col-lg-7">
               <div className="box text-center text-lg-end my-5 my-lg-0">
                 <div className="links">
                   <ul className="d-flex flex-column justify-content-center justify-content-lg-end px-0">
-                    <div className={Home}><Link href='/'><a><h3 className="pb-1 link-hold">WORK</h3></a></Link></div>
-                    <div className={Portfolio}><Link href='/portfolio'><a><h3 className="pb-1 link-hold">PORTFOLIO</h3></a></Link></div>
-                    <div className={About}><Link href='/about'><a><h3 className="pb-1 link-hold">ABOUT</h3></a></Link></div>
+                    <div className={Home}>
+                      <Link href="/">
+                        <a>
+                          <h3 className="pb-1 link-hold">WORK</h3>
+                        </a>
+                      </Link>
+                    </div>
+                    <div className={Portfolio}>
+                      <Link href="/portfolio">
+                        <a>
+                          <h3 className="pb-1 link-hold">PORTFOLIO</h3>
+                        </a>
+                      </Link>
+                    </div>
+                    <div className={About}>
+                      <Link href="/about">
+                        <a>
+                          <h3 className="pb-1 link-hold">ABOUT</h3>
+                        </a>
+                      </Link>
+                    </div>
                   </ul>
-
                 </div>
               </div>
               <div className="box">
