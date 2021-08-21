@@ -82,7 +82,7 @@ export function Footer() {
                 </div>
                 <Link href="mailto:hello@a7yson.dev">
                   <button className="btn-red w-100 my-3" type="button">
-                    Send me an email
+                    Send me an e-mail
                   </button>
                 </Link>
               </div>
