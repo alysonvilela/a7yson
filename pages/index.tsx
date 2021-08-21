@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        <h1>Hello World!</h1>
+        <h1>Hello World!!</h1>
         <Image src={headerPic} alt="Vercel Logo" />
       </div>
     </>
