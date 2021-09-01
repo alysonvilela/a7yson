@@ -68,26 +68,10 @@ export function Footer() {
                 </div>
                 <div className="text-and-image row">
                   <p className="p-display-low p-white col-7">
-                    If you want to have a chat or even bring results to your
-                    project, don't hesitate to contact me via email below, thank
-                    you for the visit ✨.
+                    ISSO DAQUI MUDOU.
                   </p>
-                  <div className="img-fluid col-5">
-                    <Image
-                      src={headerPic}
-                      alt="Icon Alyson"
-                      layout="responsive"
-                    />
-                  </div>
-                </div>
-                <Link href="mailto:hello@a7yson.dev">
-                  <button className="btn-red w-100 my-3" type="button">
-                    Send me an e-mail
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="box-right col-lg-7">
+                  
+                  
               <div className="box text-center text-lg-end my-5 my-lg-0">
                 <div className="links">
                   <ul className="d-flex flex-column justify-content-center justify-content-lg-end px-0">
