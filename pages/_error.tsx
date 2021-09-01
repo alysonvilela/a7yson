@@ -21,7 +21,11 @@ export default function Custom404() {
       <h2>Página não encontrada</h2>
       <p>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         Error 404 - Beeing redirected toaklsdmikasdmi
+=======
+        Error 404 - Alo galera bate a mao e bate o pe
+>>>>>>> Stashed changes
 =======
         Error 404 - Alo galera bate a mao e bate o pe
 >>>>>>> Stashed changes
