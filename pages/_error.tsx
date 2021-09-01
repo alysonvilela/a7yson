@@ -20,9 +20,9 @@ export default function Custom404() {
       <h1>Oops 😥</h1>
       <h2>Página não encontrada</h2>
       <p>
-        Error 404 - Beeing redirected to
+        Error 404 - Beeing redirected toaklsdmikasdmi
         <Link href="/">
-          <span className="p-red"> Home Page</span>
+          <span className="p-red"> Home Page</span>asdaksdjias
         </Link>{' '}
         in {counter} seconds
       </p>
