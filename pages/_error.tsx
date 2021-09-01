@@ -18,7 +18,7 @@ export default function Custom404() {
   return (
     <div className="container error-page text-center">
       <h1>Oops 😥</h1>
-      <h2>Page Not Found</h2>
+      <h2>Página não encontrada</h2>
       <p>
         Error 404 - Beeing redirected to
         <Link href="/">
