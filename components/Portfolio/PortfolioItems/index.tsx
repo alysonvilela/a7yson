@@ -31,6 +31,7 @@ export default function PortfolioItems({
               blurDataURL={principalPhoto}
               width={2000}
               height={1200}
+              objectFit="cover"
               alt={`Preview of ${title} project.`}
               loading="lazy"
               placeholder="blur"
@@ -44,6 +45,7 @@ export default function PortfolioItems({
                   blurDataURL={secondaryPhoto}
                   width={2000}
                   height={1200}
+                  objectFit="cover"
                   alt={`Micro preview of ${title} project.`}
                   loading="lazy"
                   placeholder="blur"
@@ -55,6 +57,7 @@ export default function PortfolioItems({
                   blurDataURL={terciaryPhoto}
                   width={2000}
                   height={1200}
+                  objectFit="cover"
                   alt={`Micro preview of ${title} project.`}
                   loading="lazy"
                   placeholder="blur"
