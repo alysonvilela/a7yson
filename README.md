@@ -16,7 +16,7 @@ Were developed from the UX/UI Design part to the front end with fetching data. Y
  - [X] Typescript
  - [X] React.js 
  - [X] Next.js
- - [ ] DatoCMS
+ - [X] GraphCMS
 
 ### Concepts used
 During the construction process, some items of the framework's functioning were used:
