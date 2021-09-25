@@ -1,5 +1,12 @@
 {
+  // @see https://go.microsoft.com/fwlink/?LinkId=827846
   "recommendations": [
-    "ms-vscode-remote.remote-wsl"
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "jpoissonnier.vscode-styled-components",
+    "stylelint.vscode-stylelint",
+    "usernamehw.errorlens",
+    "webhint.vscode-webhint"
   ]
 }

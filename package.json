@@ -22,9 +22,12 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
+    "graphql": "^15.6.0",
+    "graphql-request": "^3.5.0",
     "next": "11.0.1",
     "next-images": "^1.8.1",
     "next-seo": "^4.26.0",
+    "prettier": "^2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "^6.1.0",
@@ -35,7 +38,7 @@
   "devDependencies": {
     "@types/react": "17.0.13",
     "@types/react-helmet": "^6.1.2",
-    "eslint": "7.30.0",
+    "eslint": "^7.32.0",
     "eslint-config-next": "11.0.1",
     "sass": "^1.35.2",
     "typescript": "4.3.5"
