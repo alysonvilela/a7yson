@@ -176,7 +176,7 @@ export const getStaticProps = async () => {
     props: {
       ptfs,
     },
-    revalidate: 15,
+    revalidate: 60,
   };
 };
 

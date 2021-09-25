@@ -21,7 +21,7 @@ export default function Custom404() {
       <h2>Page Not Found</h2>
       <p>
         Error 404 - Beeing redirected to
-        <Link href="/">
+        <Link href="/" passHref>
           <span className="p-red"> Home Page</span>
         </Link>{' '}
         in {counter} seconds

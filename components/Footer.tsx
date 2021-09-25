@@ -80,7 +80,7 @@ export function Footer() {
                     />
                   </div>
                 </div>
-                <Link href="mailto:hello@a7yson.dev">
+                <Link href="mailto:hello@a7yson.dev" passHref>
                   <button className="btn-red w-100 my-3" type="button">
                     Send me an e-mail
                   </button>
@@ -91,52 +91,52 @@ export function Footer() {
               <div className="box text-center text-lg-end my-5 my-lg-0">
                 <div className="links">
                   <ul className="d-flex flex-column justify-content-center justify-content-lg-end px-0">
-                    <div className={Home}>
-                      <Link href="/">
+                    <li className={Home}>
+                      <Link href="/" passHref>
                         <a>
                           <h3 className="pb-1 link-hold">WORK</h3>
                         </a>
                       </Link>
-                    </div>
-                    <div className={Portfolio}>
-                      <Link href="/portfolio">
+                    </li>
+                    <li className={Portfolio}>
+                      <Link href="/portfolio" passHref>
                         <a>
                           <h3 className="pb-1 link-hold">PORTFOLIO</h3>
                         </a>
                       </Link>
-                    </div>
-                    <div className={About}>
-                      <Link href="/about">
+                    </li>
+                    <li className={About}>
+                      <Link href="/about" passHref>
                         <a>
                           <h3 className="pb-1 link-hold">ABOUT</h3>
                         </a>
                       </Link>
-                    </div>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="box">
                 <ul className="d-flex flex-row justify-content-center justify-content-lg-end px-0">
                   <li>
-                    <a
-                      href="https://github.com/alysonvilela/"
-                      className="px-2 p-white"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
+                    <Link href="https://github.com/alysonvilela/" passHref>
+                      <a className="px-2 p-white">
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://instagram.com/a7yson"
-                      className="px-2 p-white"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                    <Link href="https://instagram.com/a7yson" passHref>
+                      <a className="px-2 p-white">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://twitch.tv/a7yson" className="px-2 p-white">
-                      <i className="fab fa-twitch"></i>
-                    </a>
+                    <Link href="https://twitch.tv/a7yson" passHref>
+                      <a className="px-2 p-white">
+                        <i className="fab fa-twitch"></i>
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

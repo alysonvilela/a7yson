@@ -28,10 +28,12 @@ export default function PortfolioItems({
           <div className="large-pic">
             <Image
               src={principalPhoto}
+              blurDataURL={principalPhoto}
               width={2000}
               height={1200}
-              objectFit="contain"
-              alt="ESM Principal Project"
+              alt={`Preview of ${title} project.`}
+              loading="lazy"
+              placeholder="blur"
             />
           </div>
           {secondaryPhoto && terciaryPhoto && (
@@ -39,19 +41,23 @@ export default function PortfolioItems({
               <div className="medium-pic col pe-3">
                 <Image
                   src={secondaryPhoto}
+                  blurDataURL={secondaryPhoto}
                   width={2000}
                   height={1200}
-                  objectFit="contain"
-                  alt="ESM Principal Project"
+                  alt={`Micro preview of ${title} project.`}
+                  loading="lazy"
+                  placeholder="blur"
                 />
               </div>
               <div className="medium-pic col">
                 <Image
                   src={terciaryPhoto}
+                  blurDataURL={terciaryPhoto}
                   width={2000}
                   height={1200}
-                  objectFit="contain"
-                  alt="ESM Principal Project"
+                  alt={`Micro preview of ${title} project.`}
+                  loading="lazy"
+                  placeholder="blur"
                 />
               </div>
             </div>
