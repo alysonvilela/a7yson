@@ -18,7 +18,6 @@ const Portfolio = ({ ptfs }: PortifolioIncomingInfosParam) => {
   const patternName = ' - Alyson Vilela | Front-end Developer | UX/UI';
   const title = 'Portfolio';
   const description = 'Meet how I usually start my projects and my processes.';
-  console.log(ptfs);
 
   return (
     <>
@@ -33,7 +32,7 @@ const Portfolio = ({ ptfs }: PortifolioIncomingInfosParam) => {
           <div className="row text-center justify-content-center">
             <svg
               className="floating mb-4 me-0 ms-0"
-              aria-Hidden="true"
+              aria-hidden="true"
               data-icon="briefcase"
               data-prefix="fas"
               focusable="false"

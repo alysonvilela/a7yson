@@ -1,6 +1,6 @@
 {
   "name": "a7yson",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "scripts": {
     "dev": "next dev",
@@ -20,19 +20,15 @@
   },
   "homepage": "https://github.com/alysonvilela/a7yson#readme",
   "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.2",
     "graphql": "^15.6.0",
     "graphql-request": "^3.5.0",
     "next": "11.0.1",
     "next-images": "^1.8.1",
     "next-seo": "^4.26.0",
-    "prettier": "^2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "^6.1.0",
     "react-router": "^5.2.0",
-    "styled-components": "^5.3.0",
     "webpack": "^5.45.1"
   },
   "devDependencies": {
@@ -40,6 +36,7 @@
     "@types/react-helmet": "^6.1.2",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.0.1",
+    "prettier": "^2.4.1",
     "sass": "^1.35.2",
     "typescript": "4.3.5"
   }
