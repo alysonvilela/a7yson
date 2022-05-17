@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function Custom404() {
+  // Turn the counter on a hook
   const [counter, setCounter] = React.useState(5);
   const router = useRouter();
 
@@ -16,13 +17,13 @@ export default function Custom404() {
   }, [counter, router]);
 
   return (
-    <div className="container error-page text-center">
+    <div className="">
       <h1>Oops 😥</h1>
       <h2>Page Not Found</h2>
       <p>
         Error 404 - Beeing redirected to
         <Link href="/" passHref>
-          <span className="p-red"> Home Page</span>
+          <a className=""> Home Page</a>
         </Link>{' '}
         in {counter} seconds
       </p>

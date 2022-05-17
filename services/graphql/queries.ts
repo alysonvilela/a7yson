@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request'
+import { gql } from "@apollo/client"
 
 export const GET_PTFS = gql`
 query ViewPortfolio {
@@ -22,7 +22,7 @@ query ViewPortfolio {
 `
 
 export const GET_POSTS_PATHS = gql`
-query PostsPaths {
+ {
     ptfs {
       slug
     }
@@ -36,9 +36,6 @@ query SinglePost($slug: String!) {
       title
       slug
       description
-      content {
-        html
-      }
       principalPhoto {
         url
       }

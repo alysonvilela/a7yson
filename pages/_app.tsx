@@ -1,25 +1,19 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import '../public/css/main.css';
-import Head from 'next/head';
+import { ApolloProvider } from '@apollo/client';
 import { AppProps } from 'next/app';
-import { ExtScripts } from '../components/ExternalScripts';
-import { NavBar } from '../components/Nav';
-import { Footer } from '../components/Footer';
-import { SeoTags } from '../components/SeoTags';
+import { Layout } from '../components/Layout';
+import { client } from '../services/graphql/client';
 
+const App = ({ Component, pageProps }: AppProps) => {
 
-const initialDesc = "https://www.instagram.com/a7yson https://twitch.tv/a7yson https://www.linkedin.com/in/alysonvilela"
-
-const App = ({ Component, pageProps }: AppProps) => (
-  <>
-    <Head>
-      <title>Alyson Vilela | Front-end Developer | UX/UI</title> 
-    </Head>      
-    <NavBar />
-    <Component {...pageProps} />
-    <Footer />
-    <ExtScripts />
-  </>
-);
+  return (
+    <>
+      <ApolloProvider client={client}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ApolloProvider>
+    </>
+  );
+};
 
 export default App;
