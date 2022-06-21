@@ -10,7 +10,7 @@ export const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
-            {children}
+            <body className='bg-slate-800'>{children}</body>
             <Footer />
         </>
     );

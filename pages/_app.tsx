@@ -2,6 +2,7 @@ import { ApolloProvider } from '@apollo/client';
 import { AppProps } from 'next/app';
 import { Layout } from '../components/Layout';
 import { client } from '../services/graphql/client';
+import '../styles/globals.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
 
